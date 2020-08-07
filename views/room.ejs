@@ -12,23 +12,13 @@
     <script>
         const ROOM_ID = "<%= roomId %>"
     </script>
-    <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
     <script src="/socket.io/socket.io.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1><a href="/">Meetingz</a></h1>
-            <h2><a href="/">A simple video Meeting app</a></h2>
-        </header>
-
-        <footer>
-            <p>Made With Love by <a href="https://github.com/Lunaticsatoshi">@Lunaticsatoshi</a>
-                and <a href="https://www.youtube.com/channel/UCAXdtCj0usV6FO3m4G6djQQ">@All Stack</a>.</p>
-        </footer>
-    </div>
+    <div id="video-grid"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
