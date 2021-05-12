@@ -1,5 +1,5 @@
-// const socket = io('/')
-// const videoGrid = document.getElementById('video-grid')
+const socket = io('/')
+const videoGrid = document.getElementById('video-grid')
 // const myPeer = new Peer(undefined, {
 //   path: '/peerjs',
 //   host: '/',
@@ -70,6 +70,10 @@
 //   videoGrid.append(video)
 // }
 
+socket.emit('room-joined', ROOM_ID,10);
+socket.on('user-connected',(userId) => {
+  console.log('User Connected:' + userId);
+})
 
 
 const scrollToBottom = () => {
